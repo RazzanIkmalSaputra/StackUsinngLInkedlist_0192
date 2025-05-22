@@ -44,4 +44,23 @@ public:
     cout << "popped value:" << top->data << endl; 
  }
 
+ // peek/top operation: retrieve the value of the topmost element without removing 
+ void peek()
+ {
+    if (top == NULL)
+    {
+        cout << "list is empty." << endl;
+    }
+    else
+    {
+        Node *current = top;
+        while (current != NULL)
+        {
+            cout << current->data << " " << endl;
+            current = current->next;
+        }
+        cout << endl;
+    }// return the value of the top node
+ }
+
  
