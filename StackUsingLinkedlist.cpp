@@ -118,4 +118,8 @@ int main()
             break;
         default:
             cout << "invalid choice. try again." << endl;
-       
+        }
+        cout << endl;
+    }
+    return 0;
+}
